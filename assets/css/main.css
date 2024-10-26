@@ -1659,3 +1659,12 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* Add this CSS to create space between the icon and the text */
+ul.contact li {
+    display: flex;
+    align-items: center;
+}
+
+ul.contact li a {
+    margin-left: 0.5rem; /* Adjust the value as needed */
+}
