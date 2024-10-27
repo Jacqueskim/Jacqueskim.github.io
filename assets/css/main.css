@@ -1668,3 +1668,19 @@ ul.contact li {
 ul.contact li a {
     margin-left: 0.5rem; /* Adjust the value as needed */
 }
+
+/* Option 2: Focusing on a specific portion of the image using background image */
+#header .logo {
+    width: 5.5rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    border: solid 1px #ffffff;
+    border-radius: 100%;
+    overflow: hidden; /* Ensure the image fits within the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/CE.jpg');
+    background-size: cover; /* This will crop the image */
+    background-position: top left; /* Adjusts the position of the crop */
+}

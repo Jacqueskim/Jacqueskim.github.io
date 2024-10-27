@@ -1,360 +1,324 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Joshua's Project</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Kim | GPU Software Engineer</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300 antialiased">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/90 backdrop-blur-md shadow-sm border-b border-gray-800 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-bold text-xl tracking-tighter text-blue-400">JK</a>
+            <div class="space-x-6 text-sm font-semibold text-gray-300 hidden md:flex items-center">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<img class="images/CE.jpg" alt="UCSB"/>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Joshua Kim Computer Engineer</h1>
-								<p>Hello there! I'm Joshua Kim, a passionate Computer Engineer with a flair for creativity and a deep love for problem-solving.
-									 Throughout my journey, I've had the opportunity to work on diverse projects, honing my skills in Machine Learning, Embedded Software, and Full-Stack.</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">About</a></li>
-								<li><a href="#work">Resume</a></li>
-								<li><a href="#about">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col justify-center min-h-[80vh]">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 text-gray-100">
+            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">Joshua Kim</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl leading-relaxed">
+            A <span class="font-semibold text-gray-200">GPU Software & Computer Engineer</span> based in San Jose, CA. I specialize in CUDA applications, embedded systems, and machine learning infrastructure.
+        </p>
+        <div class="flex space-x-4">
+            <a href="assets/resume.pdf" target="_blank" class="bg-gray-800 border border-gray-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 hover:border-gray-500 transition shadow-lg">
+                <i class="fa-solid fa-file-pdf mr-2 text-blue-400"></i> View Resume
+            </a>
+            <a href="https://github.com/jacqueskim" target="_blank" class="text-gray-400 hover:text-white px-4 py-3 text-2xl transition">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joshua-kim-engineer/" target="_blank" class="text-gray-400 hover:text-blue-500 px-4 py-3 text-2xl transition">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gray-900 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Text -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-100">About Me</h2>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Hello! I'm Joshua, an engineer passionate about the intersection of high-performance computing, hardware, and artificial intelligence. I hold both a <strong class="text-gray-200">Master's and Bachelor's degree in Computer Engineering</strong> from UC Santa Barbara.
+                    </p>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Currently, I am a GPU Software Engineer at Graid Technology, where I design Key-Value Stores for CUDA libraries to accelerate AI inference workloads. I have a strong background in profiling/benchmarking (cuda-gdb, nsys), embedded C programming, and machine learning architectures.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Whether it's building neural networks with PyTorch, directing hardware communication on an STM32 Nucleo board, or optimizing memory space using tensor computation, I love solving complex technical challenges.
+                    </p>
+                </div>
+                <!-- Skills/Tech Stack -->
+                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 shadow-sm">
+                    <h3 class="text-xl font-bold mb-4 text-gray-100">Technical Skills</h3>
+                    
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-gray-400 mb-2">Languages</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-900/30 text-blue-300 border border-blue-800/50 font-semibold px-3 py-1 rounded-lg text-xs">C / C++</span>
+                            <span class="bg-blue-900/30 text-blue-300 border border-blue-800/50 font-semibold px-3 py-1 rounded-lg text-xs">Python</span>
+                            <span class="bg-blue-900/30 text-blue-300 border border-blue-800/50 font-semibold px-3 py-1 rounded-lg text-xs">Java</span>
+                            <span class="bg-blue-900/30 text-blue-300 border border-blue-800/50 font-semibold px-3 py-1 rounded-lg text-xs">Rust</span>
+                            <span class="bg-blue-900/30 text-blue-300 border border-blue-800/50 font-semibold px-3 py-1 rounded-lg text-xs">SQL</span>
+                        </div>
+                    </div>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Hello there! I'm [Your Name], a passionate and curious Computer Engineer with a keen interest in leveraging technology to shape a better tomorrow. 
-									Allow me to take you on a journey through my world of coding, innovation, and problem-solving.</p>
-								
-								<p>My Journey:
-									From an early age, I found myself drawn to the captivating world of computers and technology. This fascination led me to pursue a degree in Computer Engineering, where I immersed myself in a wide array of subjects, ranging from hardware design to software development.
-									 Throughout my academic journey, I've relished the challenges that come with understanding the intricate dance between hardware and software and the boundless possibilities it offers.</p>
-								<p>Passion for Innovation:
-									Nothing excites me more than exploring emerging technologies and their potential to transform the way we live, work, and interact.
-									 The dynamic nature of the tech industry constantly motivates me to stay up-to-date with the latest trends, always eager to dive into the newest tools and frameworks.</p>
-								<p>Continuous Growth:
-									The ever-evolving nature of technology fuels my desire for continuous growth. I am always seeking opportunities to expand my knowledge and embrace new challenges.
-									 Whether it's through online courses, attending workshops, or engaging in hackathons, I'm eager to push the boundaries of my expertise.</p>
-								<p>Beyond Computers:
-									While I thrive in the world of technology, I also embrace other interests that add depth to my life. I enjoy [Your Hobbies/Interests], which provide a refreshing balance and stimulate my creativity in unexpected ways.</p>
-								<p> Let's Connect:
-									Thank you for taking the time to learn a bit about me. I'm excited about the prospect of collaborating with like-minded individuals and organizations. Whether you're interested in discussing potential projects, sharing ideas, or simply want to connect, I'd love to hear from you. Feel free to reach out via [Your Email Address], and let's explore the endless possibilities together.
-									
-									Remember, in the world of Computer Engineering, innovation knows no bounds. Let's embark on a journey of technological exploration and create a future we can all be proud of.</p>
-									</article>
+                    <div class="mb-4">
+                        <p class="text-sm font-semibold text-gray-400 mb-2">Hardware & Embedded</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-900/30 text-green-300 border border-green-800/50 font-semibold px-3 py-1 rounded-lg text-xs">CUDA</span>
+                            <span class="bg-green-900/30 text-green-300 border border-green-800/50 font-semibold px-3 py-1 rounded-lg text-xs">STM32 / x86 / MIPS</span>
+                            <span class="bg-green-900/30 text-green-300 border border-green-800/50 font-semibold px-3 py-1 rounded-lg text-xs">NVMe</span>
+                            <span class="bg-green-900/30 text-green-300 border border-green-800/50 font-semibold px-3 py-1 rounded-lg text-xs">Quantum Photonics</span>
+                        </div>
+                    </div>
 
-						<!-- Resume -->
-						<!-- Resume -->
-<article id="work">
-    <h2 class="major">Resume</h2>
-    <div class="table-wrapper" style="display: flex; justify-content: center;">
-		<iframe src="assets/resume.pdf" style="width: 100%; max-width: 800px; height: calc(100vw *0.70); border: none;">
-            <p>Your browser does not support iframes. You can download the PDF <a href="assets/resume.pdf">here</a>.</p>
-        </iframe>
-    </div>
-</article>
+                    <div>
+                        <p class="text-sm font-semibold text-gray-400 mb-2">Tools & ML</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-900/30 text-purple-300 border border-purple-800/50 font-semibold px-3 py-1 rounded-lg text-xs">PyTorch</span>
+                            <span class="bg-purple-900/30 text-purple-300 border border-purple-800/50 font-semibold px-3 py-1 rounded-lg text-xs">AWS / GCP</span>
+                            <span class="bg-purple-900/30 text-purple-300 border border-purple-800/50 font-semibold px-3 py-1 rounded-lg text-xs">Docker / CI/CD</span>
+                            <span class="bg-purple-900/30 text-purple-300 border border-purple-800/50 font-semibold px-3 py-1 rounded-lg text-xs">Ghidra</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-gray-100">Professional Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-gray-700 hover:border-gray-500 flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Transfer Learning on PINN</h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">Applied tensor compression and computation techniques to reduce the memory footprint of a pre-trained partial differential equation (PDE) model, significantly improving data processing and inference speeds.</p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="bg-purple-900/30 text-purple-300 border border-purple-800/50 text-xs font-bold px-3 py-1 rounded-full">PyTorch</span>
+                            <span class="bg-blue-900/30 text-blue-300 border border-blue-800/50 text-xs font-bold px-3 py-1 rounded-full">Tensor Computation</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Contact -->
-						<article id="contact">
-                            <h2 class="major">Contact</h2>
-							<p>If you'd like to get in touch, feel free to reach out via email or LinkedIn. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Looking forward to connecting!</p>
-                            <ul class="contact">
-                                <li class="icon solid fa-envelope"><a href="mailto:kimj32989@gmail.com"> kimj32989@gmail.com</a></li>
-                                <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/joshua-kim-engineer" target="_blank">LinkedIn Profile</a></li>
-                            </ul>
-                        </article>
+                <!-- Project 2 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-gray-700 hover:border-gray-500 flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Modeling CACTI</h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">Developed and evaluated 4 ML models (KNN, MLP, SVM, Random Forest) to simulate CACTI’s computer architecture functionalities. Achieved speed improvements with MLP processing over 1,000 queries in 0.00043 seconds.</p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="bg-green-900/30 text-green-300 border border-green-800/50 text-xs font-bold px-3 py-1 rounded-full">Machine Learning</span>
+                            <span class="bg-gray-800 text-gray-300 border border-gray-600 text-xs font-bold px-3 py-1 rounded-full">Python</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+                <!-- Project 3 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-gray-700 hover:border-gray-500 flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Defect Detect | Capstone</h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">Designed an anomaly detection model that separates defective almonds from normal objects. Synthesized 30,000 images for the dataset and implemented embedded C programming with an encoder for a conveyor belt tracker.</p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="bg-yellow-900/30 text-yellow-300 border border-yellow-800/50 text-xs font-bold px-3 py-1 rounded-full">Embedded C</span>
+                            <span class="bg-indigo-900/30 text-indigo-300 border border-indigo-800/50 text-xs font-bold px-3 py-1 rounded-full">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+                <!-- Project 4 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 border border-gray-700 hover:border-gray-500 flex flex-col">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Ratedar App</h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">Developed a mobile embedded system app with GPS-based relative distance functionality. Integrated Firebase for user authentication and dynamic real-time content management.</p>
+                        <div class="flex flex-wrap gap-2 mb-2">
+                            <span class="bg-orange-900/30 text-orange-300 border border-orange-800/50 text-xs font-bold px-3 py-1 rounded-full">Firebase</span>
+                            <span class="bg-teal-900/30 text-teal-300 border border-teal-800/50 text-xs font-bold px-3 py-1 rounded-full">App Dev</span>
+                            <span class="bg-red-900/30 text-red-300 border border-red-800/50 text-xs font-bold px-3 py-1 rounded-full">GPS</span>
+                        </div>
+                    </div>
+                </div>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+            </div>
+        </div>
+    </section>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-900 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-gray-100">Experience</h2>
+            <div class="space-y-8 border-l-2 border-gray-700 pl-6 ml-3">
+                
+                <!-- Job 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1 bg-blue-500 h-4 w-4 rounded-full border-4 border-gray-900"></div>
+                    <h3 class="text-xl font-bold text-gray-100">GPU Software Engineer</h3>
+                    <p class="text-blue-400 font-semibold text-sm mb-3">Graid Technology Inc, Sunnyvale, CA &bull; Oct 2025 - Present</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm leading-relaxed">
+                        <li>Design a Key Value Store for CUDA library used for CUDA applications and storage.</li>
+                        <li>Integrate KV cache with the existing product to significantly speed up AI inference.</li>
+                        <li>Benchmark and profile applications using cuda-gdb, ncu, nsys, and cuobjdump.</li>
+                        <li>Research and design new features through the full software development life cycle.</li>
+                    </ul>
+                </div>
 
-								<section>
-									<h3 class="major">Lists</h3>
+                <!-- Job 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1 bg-gray-600 h-4 w-4 rounded-full border-4 border-gray-900"></div>
+                    <h3 class="text-xl font-bold text-gray-100">Embedded System Teaching Assistant</h3>
+                    <p class="text-gray-500 font-semibold text-sm mb-3">UCSB, Goleta, CA &bull; Jan 2024 - Jun 2024</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm leading-relaxed">
+                        <li>Instructed on serial and peripheral interfaces (GPIO, UART, I2C, SPI, USB, Wi-Fi, Bluetooth, GPS).</li>
+                        <li>Directed non-blocking motor and UART communication on an STM32L4 Nucleo Board, ensuring efficient operation without CPU interruptions.</li>
+                        <li>Educated students on ADC/DAC external circuit integration and digital signal processing.</li>
+                    </ul>
+                </div>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+                <!-- Job 3 -->
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1 bg-gray-600 h-4 w-4 rounded-full border-4 border-gray-900"></div>
+                    <h3 class="text-xl font-bold text-gray-100">Computer Vision Teaching Assistant</h3>
+                    <p class="text-gray-500 font-semibold text-sm mb-3">UCSB, Goleta, CA &bull; Sep 2023 - Dec 2023</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm leading-relaxed">
+                        <li>Designed challenging homework assignments aligned with CV curriculum learning objectives.</li>
+                        <li>Provided specialized guidance to students on leveraging PyTorch for deep learning to implement complex computer vision models.</li>
+                    </ul>
+                </div>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+                <!-- Job 4 -->
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1 bg-gray-600 h-4 w-4 rounded-full border-4 border-gray-900"></div>
+                    <h3 class="text-xl font-bold text-gray-100">Software Engineer Intern</h3>
+                    <p class="text-gray-500 font-semibold text-sm mb-3">MOOG, Goleta, CA &bull; Jun 2022 - Sep 2022</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm leading-relaxed">
+                        <li>Coded in C for system functionality and Java for the GUI, enabling easy customer interactions.</li>
+                        <li>Debugged, power-cycled, and applied embedded system knowledge bridging software to hardware.</li>
+                        <li>Developed expertise in TortoiseSVN for version control operations.</li>
+                    </ul>
+                </div>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+            </div>
+        </div>
+    </section>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+    <!-- Education & Certifications -->
+    <section id="education" class="py-20 bg-gray-800 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-gray-100">Education & Certifications</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div class="bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-700 hover:border-gray-500 transition duration-300">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold text-gray-100">M.S. in Computer Engineering</h3>
+                        <p class="text-blue-400 font-semibold text-sm mb-2">University of California, Santa Barbara &bull; June 2024</p>
+                        <p class="text-sm text-gray-400 leading-relaxed"><strong class="text-gray-300">Relevant Coursework:</strong> AI/ML in Test and Design Automation, Distributed Systems, NLP, Mobile Embedded Systems, Advanced Computer Architecture, Quantum Photonics.</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-800">
+                        <h3 class="text-xl font-bold text-gray-100">B.S. in Computer Engineering</h3>
+                        <p class="text-blue-400 font-semibold text-sm mb-2">University of California, Santa Barbara &bull; June 2023</p>
+                        <p class="text-sm text-gray-400 leading-relaxed"><strong class="text-gray-300">Relevant Coursework:</strong> Intro to Computer Vision, Data Structures & Algorithms, Intro to Computer Architecture, Sensor and Peripheral Interface Design.</p>
+                    </div>
+                </div>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+                <!-- Certifications -->
+                <div class="bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-700 hover:border-gray-500 transition duration-300 flex flex-col justify-center">
+                    <div class="flex items-center space-x-6 mb-4">
+                        <div class="bg-gray-800 p-4 rounded-full border border-gray-700">
+                            <i class="fa-solid fa-shield-halved text-4xl text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-100">CompTIA Security+</h3>
+                            <p class="text-gray-500 font-semibold text-sm mt-1">Certified March 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-950 text-white px-6 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+            
+            <!-- Contact Info -->
+            <div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-100">Let's Connect</h2>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    Whether you have an interesting project, a job opening, or just want to chat about CUDA and high-performance computing, my inbox is always open.
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-400 hover:text-white transition cursor-pointer">
+                        <i class="fa-solid fa-envelope w-6 text-blue-500 text-xl"></i>
+                        <a href="mailto:skim945@engineering.ucsb.edu" class="ml-4 font-medium">skim945@engineering.ucsb.edu</a>
+                    </div>
+                    <div class="flex items-center text-gray-400 hover:text-white transition cursor-pointer">
+                        <i class="fa-solid fa-phone w-6 text-blue-500 text-xl"></i>
+                        <a href="tel:9166422741" class="ml-4 font-medium">(916) 642-2741</a>
+                    </div>
+                    <div class="flex items-center text-gray-400 hover:text-white transition">
+                        <i class="fa-solid fa-location-dot w-6 text-blue-500 text-xl"></i>
+                        <span class="ml-4 font-medium">San Jose, CA</span>
+                    </div>
+                </div>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+                <!-- Social Links -->
+                <div class="mt-10 flex space-x-6">
+                    <a href="https://github.com/jacqueskim" target="_blank" class="text-gray-500 hover:text-white text-3xl transition"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/joshua-kim-engineer/" target="_blank" class="text-gray-500 hover:text-blue-500 text-3xl transition"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+            <!-- Contact Form -->
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800">
+                <form action="https://formspree.io/f/mdavyrjp" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-gray-400 mb-2">Name</label>
+                        <input type="text" id="name" name="name" required 
+                            class="w-full bg-gray-950 text-gray-100 border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-400 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required 
+                            class="w-full bg-gray-950 text-gray-100 border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-400 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full bg-gray-950 text-gray-100 border border-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-lg transition duration-300 shadow-md">
+                        Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
 
-							</article>
+        </div>
+    </section>
 
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Joshua Kim.</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
